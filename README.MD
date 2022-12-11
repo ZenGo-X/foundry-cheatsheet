@@ -73,7 +73,7 @@ forge create --rpc-url $GOERLI_RPC_URL --private-key $PRIVATE_KEY ./src/MyERC20.
 Solidity scripting
 
 ```sh
-forge script ./script/Force.s.sol:ForceScript --private-key $PLAYER --rpc-url $GOERLI_RPC_URL --broadcast
+forge script ./script/MyERC20.s.sol:MyERC20 --private-key $PRIVATE_KEY --rpc-url $GOERLI_RPC_URL --broadcast
 ```
 
 ## anvil
