@@ -40,7 +40,7 @@ get balance of an address
 cast balance vitalik.eth
 ```
 
-conver wei to ether
+convert wei to ether
 
 ```sh
 cast --to-unit 1000000000000000 ether
