@@ -104,4 +104,6 @@ anvil fork --rpc-url $GOERLI_RPC_URL
 
 Fork at a certain block
 
+```
 anvil fork --rpc-url $GOERLI_RPC_URL --fork-block-number 123456
+```
