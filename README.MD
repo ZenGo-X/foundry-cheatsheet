@@ -28,6 +28,12 @@ Resimulate a boradcasted tranasction
 cast run $TXID --rpc-url $RPC_URL
 ```
 
+Get contract source code from etherscan
+
+```
+cast etherscan-source $ADDRESS -d ./src
+```
+
 Decode a raw TX
 
 ```sh
@@ -76,6 +82,18 @@ Solidity scripting
 forge script ./script/Force.s.sol:ForceScript --private-key $PLAYER --rpc-url $GOERLI_RPC_URL --broadcast
 ```
 
+viewing storage slots
+
+```
+forge inspect <path>:<contractName> storage
+```
+
+Get contract sizes for the enitre project
+
+```
+forge build --sizes
+```
+
 ## anvil
 
 Forking a live network
@@ -83,3 +101,7 @@ Forking a live network
 ```sh
 anvil fork --rpc-url $GOERLI_RPC_URL
 ```
+
+Fork at a certain block
+
+anvil fork --rpc-url $GOERLI_RPC_URL --fork-block-number 123456
